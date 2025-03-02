@@ -1,0 +1,12 @@
+# Django PostreSQL Nginx Gunicorn
+
+## Set up Docker
+
+1. Create `Dockerfile`
+2. Create `docker-compose.yml` file
+3. Create `requirements.txt` file
+4. Create an image by executing `docker compose build`
+5. Create container by executing `docker compose run --rm app django-admin startproject core .`
+6. Start container by executing `docker compose up`
+7. Create terminal for container by executing `docker exec -it django_app /bin/bash`
+8. Access database on container by executing `docker exec -ti postgres_db psql -U postgres`
